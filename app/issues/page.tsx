@@ -22,16 +22,13 @@ const IssuesPage = async () => {
             <Table.ColumnHeaderCell className="hidden md:table-cell">
               Created At
             </Table.ColumnHeaderCell>
-            <Table.ColumnHeaderCell className="hidden md:table-cell">
-              Actions
-            </Table.ColumnHeaderCell>
           </Table.Row>
         </Table.Header>
         <Table.Body>
           {issues.map((issue) => (
             <Table.Row key={issue.id} className="hover:bg-gray-100">
               <Table.Cell>
-                {issue.title}{" "}
+                <Link href={`/issues/${issue.id}`}>{issue.title} </Link>
                 <div className="block md:hidden">{issue.status}</div>
               </Table.Cell>
               <Table.Cell className="hidden md:table-cell">
@@ -39,9 +36,6 @@ const IssuesPage = async () => {
               </Table.Cell>
               <Table.Cell className="hidden md:table-cell">
                 {issue.createdAt.toLocaleDateString()}
-              </Table.Cell>
-              <Table.Cell className="hidden md:table-cell">
-                <Link href={`/issues/${issue.id}`}>View</Link>
               </Table.Cell>
             </Table.Row>
           ))}
