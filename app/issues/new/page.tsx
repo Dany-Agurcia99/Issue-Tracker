@@ -11,10 +11,12 @@ import { createIssueSchema } from "@/app/validationSchemas"
 import { z } from "zod"
 import ErrorMessage from "@/app/components/ErrorMessage"
 import Spinner from "@/app/components/Spinner"
+import delay from "delay"
 
 type IssueFormData = z.infer<typeof createIssueSchema>
 
 const NewIssuePage = () => {
+  delay(1000)
   const {
     register,
     handleSubmit,
