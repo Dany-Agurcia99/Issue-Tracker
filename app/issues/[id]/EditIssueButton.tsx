@@ -1,5 +1,5 @@
 import { Link } from "@/app/components"
-import { Pencil2Icon } from "@radix-ui/react-icons/dist/Pencil2Icon"
+import { Pencil2Icon } from "@radix-ui/react-icons/dist"
 import { Box, Button } from "@radix-ui/themes"
 
 const EditIssueButton = ({ issueId }: { issueId: number }) => {
