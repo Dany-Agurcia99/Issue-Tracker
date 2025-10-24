@@ -38,7 +38,7 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
       else await axios.post("/api/issues", data)
       router.push("/issues")
     } catch (error) {
-      setError("Failed to create issue.")
+      setError("Failed to create issue. Please try again. " + error)
     } finally {
       setIsSubmitting(false)
     }

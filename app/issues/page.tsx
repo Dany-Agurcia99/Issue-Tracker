@@ -24,7 +24,7 @@ const IssuesPage = async () => {
           {issues.map((issue) => (
             <Table.Row key={issue.id} className="hover:bg-gray-100">
               <Table.Cell>
-                <Link href={`/issues/${issue.id}`} children={issue.title} />
+                <Link href={`/issues/${issue.id}`}>{issue.title}</Link>
                 <div className="block md:hidden">{issue.status}</div>
               </Table.Cell>
               <Table.Cell className="hidden md:table-cell">
@@ -40,5 +40,5 @@ const IssuesPage = async () => {
     </div>
   )
 }
-
+export const dynamic = "force-dynamic"
 export default IssuesPage
