@@ -11,7 +11,7 @@ const IssueDetail = ({ issue }: { issue: Issue }) => {
         <IssueStatusBadge status={issue.status} />
         <Text>{issue.createdAt.toLocaleString()}</Text>
       </Flex>
-      <Card className="prose" mt="6">
+      <Card className="prose max-w-full" mt="6">
         <ReactMarkdown>{issue.description}</ReactMarkdown>
       </Card>
     </>

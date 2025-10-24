@@ -4,12 +4,10 @@ import { Box, Button } from "@radix-ui/themes"
 
 const EditIssueButton = ({ issueId }: { issueId: number }) => {
   return (
-    <Box>
-      <Button>
-        <Pencil2Icon />
-        <Link href={`/issues/${issueId}/edit`}>Edit Issue</Link>
-      </Button>
-    </Box>
+    <Button>
+      <Pencil2Icon />
+      <Link href={`/issues/${issueId}/edit`}>Edit Issue</Link>
+    </Button>
   )
 }
 
