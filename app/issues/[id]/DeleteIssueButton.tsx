@@ -14,7 +14,7 @@ const DeleteIssueButton = ({ issueId }: { issueId: number }) => {
     try {
       setIsLoading(true)
       await axios.delete(`/api/issues/${issueId}`)
-      router.push("/issues")
+      router.push("/issues/list")
     } catch (error) {
       setError(true)
     } finally {
