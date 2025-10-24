@@ -1,7 +1,3 @@
-import React from "react"
+import IssueFormLoading from "@/app/issues/components/IssueFormLoading"
 
-const loading = () => {
-  return <div>loading edit...</div>
-}
-
-export default loading
+export default IssueFormLoading

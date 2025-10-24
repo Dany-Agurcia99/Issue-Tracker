@@ -1,16 +1,3 @@
-import { Box } from "@radix-ui/themes"
-import React from "react"
-import { Skeleton } from "@/app/components"
+import IssueFormLoading from "../components/IssueFormLoading"
 
-const loading = () => {
-  return (
-    <Box className="max-w-3xl mx-auto py-10">
-      <div className="space-y-3 mt-8">
-        <Skeleton height={40} />
-        <Skeleton height={400} />
-      </div>
-    </Box>
-  )
-}
-
-export default loading
+export default IssueFormLoading
