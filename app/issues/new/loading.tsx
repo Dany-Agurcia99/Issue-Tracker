@@ -8,7 +8,6 @@ const loading = () => {
     <Box className="max-w-3xl mx-auto py-10">
       <div className="space-y-3 mt-8">
         <Skeleton height={40} />
-
         <Skeleton height={400} />
       </div>
     </Box>
