@@ -1,12 +1,17 @@
 import { issueSchema } from "@/app/validationSchemas"
+import authOptions from "@/auth/authOptions"
 import { prisma } from "@/prisma/client"
 import delay from "delay"
+import { getServerSession } from "next-auth"
 import { NextRequest, NextResponse } from "next/server"
 
 export async function PATCH(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const session = await getServerSession(authOptions)
+  if (!session)
+    return NextResponse.json({ message: "Unauthorized" }, { status: 401 })
   const { id } = await params
   const body = await request.json()
   const validation = issueSchema.safeParse(body)
@@ -38,6 +43,10 @@ export async function DELETE(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const session = await getServerSession(authOptions)
+  if (!session)
+    return NextResponse.json({ message: "Unauthorized" }, { status: 401 })
+
   const { id } = await params
 
   await delay(1000)
