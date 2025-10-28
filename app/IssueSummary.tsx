@@ -18,6 +18,7 @@ const IssueSummary = ({ open, inProgress, closed }: IssueSummaryProps) => {
     },
     { label: "Closed Issues", count: closed, status: "CLOSED" },
   ]
+
   return (
     <Flex gap="4">
       {statuses.map((status) => (
