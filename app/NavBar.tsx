@@ -22,7 +22,7 @@ const NavBar = () => {
         <Flex justify="between" align="center">
           <Flex align="center" gap="6">
             <Link href="/">
-              <GiAlienBug className="h-9 w-9 text-teal-600" />
+              <GiAlienBug className="h-8 w-8 text-teal-600" />
             </Link>
             <NavLinks />
           </Flex>
