@@ -1,3 +1,5 @@
+<img width="2549" height="1106" alt="image" src="https://github.com/user-attachments/assets/a25bf965-144a-4d91-bb10-ae6ae2e5ec87" />
+
 ## 🧩 What It Is
 
 **Issue Tracker** is a full-stack web application built with **Next.js** and **TypeScript** that allows users to create, edit, and manage issues efficiently.  
