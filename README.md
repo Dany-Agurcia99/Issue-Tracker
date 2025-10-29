@@ -18,3 +18,18 @@ I built this project to strengthen my experience with **Next.js** as a full-stac
 My goal was to go beyond just the frontend and practice the **entire lifecycle of a modern web application**, from schema design and backend logic to performance monitoring and deployment.  
 
 It’s also a foundation for future experimentation - adding role-based permissions, comments, file uploads, or integrations with third-party services - while keeping the core clean and easy to extend.
+
+---
+
+## 🧠 What I Learned
+
+Working on the **Issue Tracker** taught me several key lessons about building modern web applications:
+
+- **Full-stack Next.js**: How to leverage the App Router for server-side logic, API routes, and frontend rendering in a single framework.  
+- **TypeScript in real projects**: Writing type-safe code across both frontend and backend, reducing runtime errors and improving maintainability.  
+- **Database modeling with Prisma**: Designing schemas for users and issues, handling relations, and performing CRUD operations efficiently.  
+- **Authentication & Middleware**: Implementing secure access control and route protection.  
+- **Error monitoring with Sentry**: Setting up observability and tracking runtime issues to make the app more production-ready.  
+- **Clean project structure**: Organizing folders and code to support scalability and easy maintenance.  
+
+This project strengthened my skills in **full-stack development**, **project architecture**, and **production-ready app workflows**, providing a solid foundation for future projects.
